@@ -6,7 +6,7 @@ Speaker module
 # Get sources
 
 ```
-git clone git@gitlab.ftven.net:team-infini/ftv-speaker.git
+git clone git@gitlab.ftven.net:team-infini/ftv-angular-speaker.git
 ```
 
 # Required dependencies
