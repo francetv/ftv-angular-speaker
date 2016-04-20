@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="demoApp">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="//code.angularjs.org/1.5.2/angular.min.js"></script>
+    <script src="dist/component.js"></script>
+    <script src="demo/index.js"></script>
+    <link rel="stylesheet" href="dist/component.css">
+    <link rel="stylesheet" href="demo/service.css">
+  </head>
+  <body ng-controller="DemoController">
+    <h1>Speaker demo</h1>
+    <p>Look at console to see events</p>
+    <speaker></speaker>
+
+    <p>
+      Volume value: {{volume}} <br>
+      Is muted: {{isMuted}}<br>
+      Dragging state: {{dragging}}<br>
+    </p>
+
+    <p>
+      Events:
+      <ul>
+        <li>ftv-speaker-toggle: true if muted, false if not</li>
+        <li>ftv-speaker-set-volume: volume in percentage (eg: 90 = 90%)</li>
+        <li>ftv-speaker-dragging-start: when user click and hold volume bar</li>
+        <li>ftv-speaker-dragging-stop: when user release volume bar</li>
+      </ul>
+    </p>
+  </body>
+</html>

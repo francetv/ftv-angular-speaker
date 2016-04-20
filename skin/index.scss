@@ -1,0 +1,42 @@
+.speakerDirective {
+    display: inline-block;
+    vertical-align: top;
+
+    &__svg {
+        cursor: pointer;
+        svg {
+            fill: $spearker-button-color;
+            .cross {
+                display: none;
+            }
+            .wave{
+                display: block;
+            }
+        }
+        &--off {
+            svg {
+                .wave {
+                    display: none;
+                }
+                .cross{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__sliderVolume {
+        margin-top: 14px;
+        width: 50px;
+        height: 6px;
+        background-color: $spearker-slider-color;
+        @include border-radius(5px);
+        &__bar {
+            cursor: pointer;
+            height: 6px;
+            width: 20%;
+            background-color: $spearker-slider-bar-color;
+            @include border-radius(5px 0 0 5px);
+        }
+    }
+}
