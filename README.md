@@ -37,8 +37,8 @@ gulp build-dev-watch
 
 ```
 npm install -g http-server
-http-server
 gulp build
+http-server
 ```
 
 Open [demo](http://127.0.0.1:8080/demo.html)
