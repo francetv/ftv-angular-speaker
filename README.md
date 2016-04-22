@@ -1,28 +1,49 @@
-FTVEN - Speaker
-========================
+# Ftv::Components::Speaker
 
-Speaker module
+Angular module to display a speaker and a volume bar. This module will throw event on mute/unmute and volume change.
 
-# Get sources
+## Get sources
 
 ```
 git clone git@gitlab.ftven.net:team-infini/ftv-angular-speaker.git
 ```
 
-# Required dependencies
+## How to use
+
+Include javascript and css
+
+```
+<script src="dist/component.js"></script>
+<link rel="stylesheet" href="dist/component.css">
+```
+
+In your template
+
+```
+<speaker></speaker>
+```
+
+## Events
+
+* ftv-speaker-toggle: true if muted, false if not
+* ftv-speaker-set-volume: volume in percentage (eg: 90 = 90%)
+* ftv-speaker-dragging-start: when user click and hold volume bar
+* ftv-speaker-dragging-stop: when user release volume bar
+
+## Required dependencies
 
 - [npm](https://nodejs.org/)
 - [gem](https://rubygems.org/)
 
-# Installation process
+## Build process
 
 ```
 sudo apt-get install ruby ruby-dev gem
 npm install -g gulp
 
 npm install
-gem update --system
-gem install compass
+
+sudo gem install compass
 
 gulp build
 ```
