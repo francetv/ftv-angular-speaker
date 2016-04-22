@@ -6,7 +6,7 @@ angular.module('ftv.component.speaker', ['ftv.components.speaker.templates'])
             },
             templateUrl: '/speaker/index.html',
             link: function ($scope, element) {
-                $scope.currentVolume = .2; //value from 0 to 1, step by decimal
+                $scope.currentVolume = 0.2; //value from 0 to 1, step by decimal
 
                 function getVolumeBarElement() {
                     return element.find('.speakerDirective__sliderVolume__bar');
