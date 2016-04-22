@@ -1,4 +1,4 @@
-angular.module('demoApp', ['ftv.component.speaker']);
+angular.module('demoApp', ['ftv.components.speaker']);
 angular.module('demoApp').controller('DemoController', ['$scope', '$rootScope', function($scope, $rootScope) {
     $scope.volume = 20;
     $scope.isMuted = false;
