@@ -54,6 +54,14 @@ gulp build
 gulp build-dev-watch
 ```
 
+## Tests
+
+```
+gulp build
+bower install
+gulp karma-test
+```
+
 ## Demo
 
 ```

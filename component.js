@@ -1,5 +1,5 @@
 angular.module('ftv.components.speaker', ['ftv.components.speaker.templates'])
-    .directive('speaker', ['$rootScope', '$document', function ($rootScope, $document) {
+    .directive('ftvSpeaker', ['$rootScope', '$document', function ($rootScope, $document) {
         return {
             restrict: 'E',
             scope: {

@@ -1,5 +1,5 @@
 <div class="speakerDirective">
-    <div ng-include="'templates/speaker.svg.html'" ng-click="toggleSpeaker()" class="speakerDirective__svg" ng-class="{'speakerDirective__svg--off': isSpeakerOff}"></div>
+    <div ng-include="'/speaker/speaker.svg.html'" ng-click="toggleSpeaker()" class="speakerDirective__svg" ng-class="{'speakerDirective__svg--off': isSpeakerOff}"></div>
     <div class="speakerDirective__sliderVolume" ng-mousedown="startDrag($event)">
         <div class="speakerDirective__sliderVolume__bar"></div>
     </div>
