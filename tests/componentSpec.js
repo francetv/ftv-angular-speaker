@@ -1,11 +1,13 @@
-describe('Modules::Speaker::Directive', function () {
+describe('FTV::Speaker::Component', function () {
     var $window, element, $scope, directiveScope, expectedVolume;
+
+    beforeEach(module('ftv.components.speaker'));
 
     beforeEach(inject(function ($compile, $rootScope) {
         expectedVolume = 0.5;
         $scope = $rootScope;
 
-        element = $compile('<speaker></speaker>')($scope);
+        element = $compile('<ftv-speaker></ftv-speaker>')($scope);
 
     }));
 

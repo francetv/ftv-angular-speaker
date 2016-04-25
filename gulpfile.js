@@ -11,6 +11,7 @@ var jshint = require('gulp-jshint');
 var rename = require('gulp-rename');
 var compass = require('gulp-compass');
 var scsslint = require('gulp-scss-lint');
+var karma = require('karma').server;
 
 var buildDir = 'dist';
 var appName = 'component';
@@ -146,4 +147,12 @@ gulp.task('js-lint', function() {
 gulp.task('css-lint', function() {
     return gulp.src('component.scss')
         .pipe(scsslint());
+});
+
+// Karma //
+gulp.task('karma-test', function (callback) {
+    karma.start({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true
+    }, callback);
 });
