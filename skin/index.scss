@@ -5,7 +5,7 @@
     &__svg {
         cursor: pointer;
         svg {
-            fill: $spearker-button-color;
+            fill: $speaker-button-color;
             .cross {
                 display: none;
             }
@@ -26,16 +26,16 @@
     }
 
     &__sliderVolume {
-        margin-top: 14px;
-        width: 50px;
-        height: 6px;
-        background-color: $spearker-slider-color;
+        margin-top: $speaker-slider-bar-margin-top;
+        width: $speaker-slider-width;
+        height: $speaker-slider-height;
+        background-color: $speaker-slider-color;
         @include border-radius(5px);
         &__bar {
             cursor: pointer;
-            height: 6px;
+            height: $speaker-slider-height;
             width: 20%;
-            background-color: $spearker-slider-bar-color;
+            background-color: $speaker-slider-bar-color;
             @include border-radius(5px 0 0 5px);
         }
     }
