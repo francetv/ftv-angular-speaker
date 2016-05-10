@@ -1,11 +1,13 @@
 # Ftv::Components::Speaker
 
+This project is part of [francetv zoom open source projects](https://github.com/francetv/zoom-public) (iOS, Android and Angular)
+
 Angular module to display a speaker and a volume bar. This module will throw event on mute/unmute and volume change.
 
 ## Get sources
 
 ```
-git clone git@gitlab.ftven.net:team-infini/ftv-angular-speaker.git
+git clone git@github.com:francetv/ftv-angular-speaker.git
 ```
 
 ## How to use
@@ -71,6 +73,3 @@ http-server
 ```
 
 Open [demo](http://127.0.0.1:8080/demo.html)
-
----------------------------------------
-This project is part of [francetv zoom open source projects](https://gitlab.ftven.net/team-infini/zoom-public) (iOS, Android and Angular)
