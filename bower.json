@@ -12,6 +12,7 @@
     "node_modules",
     ".gitignore",
     "component.js",
+    "karma.conf.js",
     "gulpfile.js"
   ],
   "dependencies": {
